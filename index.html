@@ -1,15 +1,105 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Xadrez</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Tabuleiro</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
-<body>
-    <button id="iniciar-jogo">Iniciar Jogo</button>
-    <div id="tabuleiro"></div>
 
-    <script src="script.js"></script>
+<body>
+    
+    <div class="tabuleiro">
+        <div class="linha">
+            <div class="branco" onclick="handleClick(this)"><div class="pecaP" onclick="selecionarPeca(event, this)">♜</div></span></div>
+            <div class="preto" onclick="handleClick(this)"><div class="pecaP" onclick="selecionarPeca(event, this)">♝</div></span></div>
+            <div class="branco" onclick="handleClick(this)"><div class="pecaP" onclick="selecionarPeca(event, this)">♞</div></span></div>
+            <div class="preto" onclick="handleClick(this)"><div class="pecaP" onclick="selecionarPeca(event, this)">♛</div></span></div>
+            <div class="branco" onclick="handleClick(this)"><div class="pecaP" onclick="selecionarPeca(event, this)">♚</div></span></div>
+            <div class="preto" onclick="handleClick(this)"><div class="pecaP" onclick="selecionarPeca(event, this)">♞</div></span></div>
+            <div class="branco" onclick="handleClick(this)"><div class="pecaP" onclick="selecionarPeca(event, this)">♝</div></span></div>
+            <div class="preto" onclick="handleClick(this)"><div class="pecaP" onclick="selecionarPeca(event, this)">♜</div></span></div>
+        </div>
+
+        <div class="linha">
+            <div class="preto" onclick="handleClick(this)"><div class="pecaP" onclick="selecionarPeca(event, this)">♟</div></span></div>
+            <div class="branco" onclick="handleClick(this)"><div class="pecaP" onclick="selecionarPeca(event, this)">♟</div></span></div>
+            <div class="preto" onclick="handleClick(this)"><div class="pecaP" onclick="selecionarPeca(event, this)">♟</div></span></div>
+            <div class="branco" onclick="handleClick(this)"><div class="pecaP" onclick="selecionarPeca(event, this)">♟</div></span></div>
+            <div class="preto" onclick="handleClick(this)"><div class="pecaP" onclick="selecionarPeca(event, this)">♟</div></span></div>
+            <div class="branco" onclick="handleClick(this)"><div class="pecaP" onclick="selecionarPeca(event, this)">♟</div></span></div>
+            <div class="preto" onclick="handleClick(this)"><div class="pecaP" onclick="selecionarPeca(event, this)">♟</div></span></div>
+            <div class="branco" onclick="handleClick(this)"><div class="pecaP" onclick="selecionarPeca(event, this)">♟</div></span></div>
+        </div>
+
+        <div class="linha">
+            <div class="branco" onclick="handleClick(this)"></div>
+            <div class="preto" onclick="handleClick(this)"></div>
+            <div class="branco" onclick="handleClick(this)"></div>
+            <div class="preto" onclick="handleClick(this)"></div>
+            <div class="branco" onclick="handleClick(this)"></div>
+            <div class="preto" onclick="handleClick(this)"></div>
+            <div class="branco" onclick="handleClick(this)"></div>
+            <div class="preto" onclick="handleClick(this)"></div>
+        </div>
+
+        <div class="linha">
+            <div class="preto" onclick="handleClick(this)"></div>
+            <div class="branco" onclick="handleClick(this)"></div>
+            <div class="preto" onclick="handleClick(this)"></div>
+            <div class="branco" onclick="handleClick(this)"></div>
+            <div class="preto" onclick="handleClick(this)"></div>
+            <div class="branco" onclick="handleClick(this)"></div>
+            <div class="preto" onclick="handleClick(this)"></div>
+            <div class="branco" onclick="handleClick(this)"></div>
+        </div>
+
+        <div class="linha">
+            <div class="branco" onclick="handleClick(this)"></div>
+            <div class="preto" onclick="handleClick(this)"></div>
+            <div class="branco" onclick="handleClick(this)"></div>
+            <div class="preto" onclick="handleClick(this)"></div>
+            <div class="branco" onclick="handleClick(this)"></div>
+            <div class="preto" onclick="handleClick(this)"></div>
+            <div class="branco" onclick="handleClick(this)"></div>
+            <div class="preto" onclick="handleClick(this)"></div>
+        </div>
+
+        <div class="linha">
+            <div class="preto" onclick="handleClick(this)"></div>
+            <div class="branco" onclick="handleClick(this)"></div>
+            <div class="preto" onclick="handleClick(this)"></div>
+            <div class="branco" onclick="handleClick(this)"></div>
+            <div class="preto" onclick="handleClick(this)"></div>
+            <div class="branco" onclick="handleClick(this)"></div>
+            <div class="preto" onclick="handleClick(this)"></div>
+            <div class="branco" onclick="handleClick(this)"></div>
+        </div>
+
+        <div class="linha">
+            <div class="branco" onclick="handleClick(this)"><div class="pecaB" onclick="selecionarPeca(event, this)">♟</div></span></div>
+            <div class="preto" onclick="handleClick(this)"><div class="pecaB" onclick="selecionarPeca(event, this)">♟</div></span></div>
+            <div class="branco" onclick="handleClick(this)"><div class="pecaB" onclick="selecionarPeca(event, this)">♟</div></span></div>
+            <div class="preto" onclick="handleClick(this)"><div class="pecaB" onclick="selecionarPeca(event, this)">♟</div></span></div>
+            <div class="branco" onclick="handleClick(this)"><div class="pecaB" onclick="selecionarPeca(event, this)">♟</div></span></div>
+            <div class="preto" onclick="handleClick(this)"><div class="pecaB" onclick="selecionarPeca(event, this)">♟</div></span></div>
+            <div class="branco" onclick="handleClick(this)"><div class="pecaB" onclick="selecionarPeca(event, this)">♟</div></span></div>
+            <div class="preto" onclick="handleClick(this)"><div class="pecaB" onclick="selecionarPeca(event, this)">♟</div></span></div>
+        </div>
+
+        <div class="linha">
+            <div class="preto" onclick="handleClick(this)"><div class="pecaB" onclick="selecionarPeca(event, this)">♜</div></span></div>
+            <div class="branco" onclick="handleClick(this)"><div class="pecaB" onclick="selecionarPeca(event, this)">♝</div></span></div>
+            <div class="preto" onclick="handleClick(this)"><div class="pecaB" onclick="selecionarPeca(event, this)">♞</div></span></div>
+            <div class="branco" onclick="handleClick(this)"><div class="pecaB" onclick="selecionarPeca(event, this)">♚</div></span></div>
+            <div class="preto" onclick="handleClick(this)"><div class="pecaB" onclick="selecionarPeca(event, this)">♛</div></span></div>
+            <div class="branco" onclick="handleClick(this)"><div class="pecaB" onclick="selecionarPeca(event, this)">♞</div></span></div>
+            <div class="preto" onclick="handleClick(this)"><div class="pecaB" onclick="selecionarPeca(event, this)">♝</div></span></div>
+            <div class="branco" onclick="handleClick(this)"><div class="pecaB" onclick="selecionarPeca(event, this)">♜</div></span></div>
+        </div>
+    </div>
+
+    <script src="js/script.js"></script>
 </body>
 </html>
